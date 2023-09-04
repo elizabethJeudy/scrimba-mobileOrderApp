@@ -65,8 +65,8 @@ h3.card-itemName {
   cursor: pointer;
 }
 
-.add-white {
-  width: 5px;
+.card-menu .img-add-white {
+  width: 18px;
 }
 
 .card-menu:hover {
