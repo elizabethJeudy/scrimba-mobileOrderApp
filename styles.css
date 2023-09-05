@@ -17,6 +17,13 @@ header img {
   height: 250px;
 }
 
+.img-banner {
+  position: absolute;
+  top: 220px;
+  left: 450px;
+  color: #333
+}
+
 .card {
   display: flex;
   justify-content: space-between;
