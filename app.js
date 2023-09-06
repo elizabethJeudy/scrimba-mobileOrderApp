@@ -1,5 +1,6 @@
 import { menuArray } from "/data.js";
 
+// renders menu items
 const menuArrHtml = menuArray
 	.map(function (item) {
 		return `
@@ -22,3 +23,5 @@ const menuArrHtml = menuArray
 	})
 	.join("");
 document.getElementById("container").innerHTML = menuArrHtml;
+
+// renders items user adds to cart
