@@ -25,3 +25,8 @@ const menuArrHtml = menuArray
 document.getElementById("container").innerHTML = menuArrHtml;
 
 // renders items user adds to cart
+function calculateCart(menuArray) {
+	const totalCart = menuArray.reduce(function (item) {
+		return;
+	});
+}
