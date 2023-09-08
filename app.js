@@ -27,6 +27,19 @@ document.getElementById("container").innerHTML = menuArrHtml;
 // renders items user adds to cart
 function calculateCart(menuArray) {
 	const totalCart = menuArray.reduce(function (item) {
-		return;
+		return `
+<section class="order-card">
+				<div class="added-item">
+					<h4 class="item-name">${item.name}</h4>
+					<p class="remove-item">remove</p>
+					<p class="item-price">${item.price}</p>
+				</div>
+				<div class="order-total">
+					<h4 class="total-price">Total price: ${totalCart}</h4>
+				</div>
+				<button class="complete-btn">Complete order</button>
+			</section>
+    `;
 	});
 }
+document.getElementById("cart-container").innerHTML = calculateCart;
