@@ -1,5 +1,6 @@
 import { menuArray } from "/data.js";
 
+let cart = [];
 // renders menu items
 const menuArrHtml = menuArray
 	.map(function (item) {
@@ -15,7 +16,9 @@ const menuArrHtml = menuArray
             </div>
         <div class="card-end">
             <p class="card-menu">
-               <img src="/assets/add-black.png" class="img-add-black"/>
+               <img src="/assets/add-black.png" class="img-add-black"
+               data-name="${item.name}"
+               data-price="${item.price}"/>
             </p>
         </div>
     </section>
@@ -24,22 +27,39 @@ const menuArrHtml = menuArray
 	.join("");
 document.getElementById("container").innerHTML = menuArrHtml;
 
+const addBtns = document.querySelectorAll(".img-add-black");
+addBtns.forEach((btn) => {
+	btn.addEventListener("click", addToCart);
+});
+
+function addToCart(event) {
+	let name = event.target.dataset.name;
+	let price = event.target.dataset.price;
+	let item = {
+		name,
+		price,
+	};
+	cart.push(item);
+}
+
 // renders items user adds to cart
-function calculateCart(menuArray) {
-	const totalCart = menuArray.reduce(function (item) {
-		return `
+function calculateCart(cart) {
+	let cartHtml = "";
+	let total = 0;
+	cart.forEach((item) => {
+		cartHtml += `
 <section class="order-card">
 				<div class="added-item">
 					<h4 class="item-name">${item.name}</h4>
 					<p class="remove-item">remove</p>
 					<p class="item-price">${item.price}</p>
 				</div>
-				<div class="order-total">
-					<h4 class="total-price">Total price: ${totalCart}</h4>
-				</div>
 				<button class="complete-btn">Complete order</button>
 			</section>
     `;
+		total += item.price;
 	});
+	document.getElementById("cart-container").innerHTML = cartHtml;
+	document.getElementById("total").innerHTML = total;
 }
-document.getElementById("cart-container").innerHTML = calculateCart;
+calculateCart(cart);
