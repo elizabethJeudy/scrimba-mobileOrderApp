@@ -5,6 +5,7 @@ export const menuArray = [
 		toppings: ["pepperoni, mushroom, cheese"],
 		price: 14,
 		id: 0,
+		numberOrdered: 0,
 	},
 	{
 		name: "Burger",
@@ -12,6 +13,7 @@ export const menuArray = [
 		toppings: ["bacon, cheese, tomato, pickles, lettuce"],
 		price: 12,
 		id: 1,
+		numberOrdered: 0,
 	},
 	{
 		name: "Taco",
@@ -19,6 +21,7 @@ export const menuArray = [
 		toppings: ["beef, brown rice, black beans, cheese, sour cream"],
 		price: 2,
 		id: 2,
+		numberOrdered: 0,
 	},
 	{
 		name: "Hotdog",
@@ -26,6 +29,7 @@ export const menuArray = [
 		toppings: ["ketchup, mustard, relish"],
 		price: 4,
 		id: 3,
+		numberOrdered: 0,
 	},
 	{
 		name: "Corndog",
@@ -33,6 +37,7 @@ export const menuArray = [
 		toppings: ["ketchup, mustard"],
 		price: 3,
 		id: 4,
+		numberOrdered: 0,
 	},
 	{
 		name: "Chicken Wrap",
@@ -40,6 +45,7 @@ export const menuArray = [
 		toppings: ["chicken, bacon, lettuce, cheese, tomato"],
 		price: 10,
 		id: 5,
+		numberOrdered: 0,
 	},
 	{
 		name: "Fries",
@@ -47,6 +53,7 @@ export const menuArray = [
 		toppings: ["ketchup, bbq sauce, honey mustard"],
 		price: 2,
 		id: 6,
+		numberOrdered: 0,
 	},
 	{
 		name: "Beer",
@@ -56,6 +63,7 @@ export const menuArray = [
 		],
 		price: 5,
 		id: 7,
+		numberOrdered: 0,
 	},
 	{
 		name: "Soda",
@@ -63,6 +71,7 @@ export const menuArray = [
 		toppings: ["Dr.Pepper, Coke, Pepsi, Sprite, Mountain Dew"],
 		price: 2,
 		id: 8,
+		numberOrdered: 0,
 	},
 	{
 		name: "Ice Cream",
@@ -70,5 +79,6 @@ export const menuArray = [
 		toppings: ["vanilla, chocolate, pecan"],
 		price: 4,
 		id: 9,
+		numberOrdered: 0,
 	},
 ];
