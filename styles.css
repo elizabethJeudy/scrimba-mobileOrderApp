@@ -109,14 +109,6 @@ h3.card-name {
   cursor: pointer;
 }
 
-.footer-icon a {
-  color: whitesmoke;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  width: 40px;
-}
-
 small {
   padding-top: 10px;
 }
