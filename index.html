@@ -4,35 +4,25 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="styles.css" />
+		<script
+			src="https://kit.fontawesome.com/f87113e194.js"
+			crossorigin="anonymous"
+		></script>
 		<title>Scrimba - Burger Restaurant</title>
 	</head>
 	<body>
-		<header>
-			<img src="assets/header.webp" />
-			<div class="img-banner">The best burgers and pizza in town.</div>
-		</header>
-		<div class="container" id="container"></div>
-		<div class="cart-container" id="cart-container">
-			<p class="total" id="total"></p>
+		<div class="container">
+			<header>
+				<img src="assets/header.webp" />
+				<div class="img-banner">The best burgers and pizza in town.</div>
+			</header>
+			<main>
+				<form id="menu"></form>
+				<form id="order-details"></form>
+				<div id="payment-modal" class="hidden"></div>
+			</main>
 		</div>
-		<footer class="footer-nav">
-			<div class="footer-icon home">
-				<img src="assets/home.png" />
-				<small>Home</small>
-			</div>
-			<div class="footer-icon account">
-				<img src="assets/account.png" />
-				<small>Account</small>
-			</div>
-			<div class="footer-icon rewards">
-				<img src="assets/trophy.png" />
-				<small>Rewards</small>
-			</div>
-			<div class="footer-icon checkout">
-				<img src="assets/grocery-store.png" />
-				<small>Checkout</small>
-			</div>
-		</footer>
+
 		<script src="app.js" type="module"></script>
 	</body>
 </html>
